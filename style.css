@@ -1,0 +1,21 @@
+.btn-primary{
+    width: 100%;
+    height: 60px;
+}
+.card{
+    border-radius: 20px;
+    background-color: #f6f6f9;
+}
+input{
+    height: 60px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    width: 100%;
+}
+#result{
+    text-align: right;
+}
+#history{
+    display: block;
+    height: 30px;
+}

@@ -10,16 +10,55 @@
       crossorigin="anonymous"
     />
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
       <div class="container mt-5">
           <div class="row justify-content-center">
               <div class="col-5 col-md-5">
-                  <div class="card p-5">
+                  <div class="card p-4">
                     <h2>Calculator</h2>
-                      
+                    <table border="0">
+                      <tr>
+                        <td colspan="4">
+                            <div id="history"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <input type="text" class="form-control" id="result"/>
+                        </td>
+                        <td>
+                          <input type="button" value="C" class="btn btn-danger" onclick="clearCall()"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="button" value="1" class="btn btn-primary" onclick="display('1')"/></td>
+                        <td><input type="button" value="2" class="btn btn-primary" onclick="display('2')"/></td>
+                        <td><input type="button" value="3" class="btn btn-primary" onclick="display('3')"/></td>
+                        <td><input type="button" value="/" class="btn btn-primary operation" onclick="display('/')"/></td>
+                      </tr>
+                      <tr>
+                        <td><input type="button" value="4" class="btn btn-primary" onclick="display('4')"/></td>
+                        <td><input type="button" value="5" class="btn btn-primary" onclick="display('5')"/></td>
+                        <td><input type="button" value="6" class="btn btn-primary" onclick="display('6')"/></td>
+                        <td><input type="button" value="*" class="btn btn-primary operation" onclick="display('*')"/></td>
+                      </tr>
+                      <tr>
+                        <td><input type="button" value="7" class="btn btn-primary" onclick="display('7')"/></td>
+                        <td><input type="button" value="8" class="btn btn-primary" onclick="display('8')"/></td>
+                        <td><input type="button" value="9" class="btn btn-primary" onclick="display('9')"/></td>
+                        <td><input type="button" value="-" class="btn btn-primary operation" onclick="display('-')"/></td>
+                      </tr>
+                      <tr>
+                        <td><input type="button" value="." class="btn btn-primary" onclick="display('.')"/></td>
+                        <td><input type="button" value="0" class="btn btn-primary" onclick="display('0')"/></td>
+                        <td><input type="button" value="=" class="btn btn-primary" onclick="solve()"/></td>
+                        <td><input type="button" value="+" class="btn btn-primary operation" onclick="display('+')"/></td>
+                      </tr>
+                    </table>  
                   </div>
-                  <ul class="output m-0 p-0" id="outputList"></ul>
+                  
               </div>
           </div>
       </div>
